@@ -9,11 +9,11 @@ Installation
 
 Download file to your home directory or subdirectory. 
 
-Edit Device config at the top of the file. You can easily add more than 2 device by copying the device config changing number on the end. Then copy a IF block for each device. The start and end are labeled. 
+Edit Device config at the top of the file. You can easily add more than 2 devices by copying the device config and changing each number on the end. Then copy the IF block for each device. The start and end are labeled. 
 
 If needed chmod +x bluetooth.sh
 
-In DomotiGA enable shell module if needed. Then add device as a shell interface. Then enter the path to the script and for each device\person add a number. For example.
+In DomotiGA enable shell module if needed. Then add device as a shell interface. Enter the path to the script, and for each device\person add a number. For example.
 
 /home/user/bluetooth.sh 1
 
