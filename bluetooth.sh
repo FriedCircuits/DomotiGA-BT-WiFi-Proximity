@@ -23,7 +23,7 @@ DEVICEIP2="192.168.0.000"
 #Device 1 Start
 if [ "$1" -eq 1 ]; then
         BTNAME=$(hcitool name $DEVICEMAC1)
-        ping -c 1 $DEVICEIP1 >> null
+        ping -c 1 $DEVICEIP1 > /dev/null 2>&1
         STATUS=$?
         if [ "$BTNAME" = "$DEVICE1" -o $STATUS -ne 1 ]; then
                 echo "Present"
@@ -35,7 +35,7 @@ if [ "$1" -eq 1 ]; then
 #Device 2 Start
 elif [ "$1" -eq 2 ]; then
         BTNAME=$(hcitool name $DEVICEMAC2)
-        ping -c 1 $DEVICEIP2 >> null
+        ping -c 1 $DEVICEIP2 > /dev/null 2>&1
         STATUS=$?
         if [ "$BTNAME" = "$DEVICE2" -o $STATUS -ne 1 ]; then  
                 echo "Present"
